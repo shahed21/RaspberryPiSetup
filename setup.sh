@@ -17,4 +17,6 @@ sudo systemctl start ssh
 mkdir ~/.ssh
 cp ./.ssh/config ~/.ssh
 
+sudo echo $1 > /etc/hostname
+
 sudo reboot
