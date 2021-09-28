@@ -9,4 +9,10 @@ sudo systemctl enable ssh
 sudo systemctl start ssh
 
 cat append.profile.txt >> ~/.profile
-source ~./profile
+source ~/.profile
+
+source go_installer.sh
+source geth_installer.sh
+source nodejs_installer.sh
+
+sudo reboot
