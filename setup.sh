@@ -18,6 +18,6 @@ sudo systemctl start ssh
 mkdir ~/.ssh
 cp ./.ssh/config ~/.ssh
 
-sudo hostnamectl set-hostname traderpi
+sudo hostnamectl set-hostname $1
 
 sudo reboot
