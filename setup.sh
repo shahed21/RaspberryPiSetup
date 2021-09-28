@@ -7,6 +7,8 @@ sudo apt-get install xrdp
 
 sudo systemctl enable ssh
 sudo systemctl start ssh
+mkdir ~/.ssh
+cp ./.ssh/config ~/.ssh
 
 cat append.profile.txt >> ~/.profile
 source ~/.profile
