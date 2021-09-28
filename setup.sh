@@ -1,4 +1,4 @@
-sudo export DEBIAN_FRONTEND=noninteractive
+#sudo export DEBIAN_FRONTEND=noninteractive
 sudo apt-get -q -y update 
 sudo apt-get -q -y upgrade
 sudo apt-get -q -y install build-essential
@@ -15,8 +15,6 @@ source nodejs_installer.sh
 
 sudo systemctl enable ssh
 sudo systemctl start ssh
-mkdir ~/.ssh
-cp ./.ssh/config ~/.ssh
 
 sudo hostnamectl set-hostname $1
 
