@@ -1,0 +1,8 @@
+# Go
+export PATH=$PATH:/usr/local/go/bin
+export GOPATH=$HOME/go
+
+# Nodejs
+VERSION=v14.17.6
+DISTRO=linux-armv7l
+export PATH=/usr/local/lib/nodejs/node-$VERSION-$DISTRO/bin:$PATH
