@@ -13,11 +13,10 @@ source go_installer.sh
 source geth_installer.sh
 source nodejs_installer.sh
 
-sudo systemctl enable ssh
-sudo systemctl start ssh
-
 sudo hostnamectl set-hostname $1
 
 sudo raspi-config
+sudo systemctl enable ssh
+sudo systemctl start ssh
 
 sudo reboot
