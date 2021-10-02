@@ -18,7 +18,7 @@ sudo /etc/init.d/samba-ad-dc restart
 
 #sudo hostnamectl set-hostname $1
 
-sudo raspi-config
+#sudo raspi-config
 #sudo systemctl enable ssh
 #sudo systemctl start ssh
 
