@@ -13,6 +13,7 @@ source go_installer.sh
 source geth_installer.sh
 source nodejs_installer.sh
 
+sudo apt-get -q -y install samba samba-common-bin
 sudo cp /home/pi/RaspberryPiSetup/smb.conf /etc/samba/
 sudo /etc/init.d/samba-ad-dc restart
 
