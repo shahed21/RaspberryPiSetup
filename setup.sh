@@ -13,10 +13,13 @@ source go_installer.sh
 source geth_installer.sh
 source nodejs_installer.sh
 
-sudo hostnamectl set-hostname $1
+sudo cp /home/pi/RaspberryPiSetup/smb.conf /etc/samba/
+sudo /etc/init.d/samba-ad-dc restart
+
+#sudo hostnamectl set-hostname $1
 
 sudo raspi-config
-sudo systemctl enable ssh
-sudo systemctl start ssh
+#sudo systemctl enable ssh
+#sudo systemctl start ssh
 
 sudo reboot
