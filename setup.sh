@@ -15,6 +15,9 @@ source nodejs_installer.sh
 
 sudo apt-get -q -y install samba samba-common-bin
 sudo cp /home/pi/RaspberryPiSetup/smb.conf /etc/samba/
+echo "Adding Samba Password For pi.  Please enter password"
+sudo smbpasswd -a pi
+mkdir ~/project
 sudo /etc/init.d/samba-ad-dc restart
 
 #sudo hostnamectl set-hostname $1
